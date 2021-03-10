@@ -1,9 +1,14 @@
 package com.example.androiddevchallenge.components
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.*
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.Icon
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Pause
@@ -40,7 +45,6 @@ fun Controllers(
             .width(64.dp)) {
             Icon(Icons.Default.PlayArrow, contentDescription = "Start")
         }
-        //Button(onClick = onPause, style = OutlinedButtonS)
 
         OutlinedButton(onClick = onPause, colors = outlineButtonColor,
             border = BorderStroke(1.dp, color = Color.Blue),
